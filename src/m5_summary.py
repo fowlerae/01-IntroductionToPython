@@ -2,12 +2,19 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Ashley Fowler.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
+import rosegraphics as rg
+window=rg.TurtleWindow()
+window.delay(10)
+ash=rg.SimpleTurtle()
+ash.pen=rg.Pen("thistle",30)
+ash.forward(10)
+window.close_on_mouse_click()
 
 ########################################################################
 # TODO: 2.

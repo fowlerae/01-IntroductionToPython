@@ -14,7 +14,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """
 ###############################################################################
 #
-# TODO: 1.
+# Done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -43,13 +43,13 @@ import rosegraphics as rg
 #   in all projects that use rosegraphics, so get used to it. :)
 #
 #   Once  rosegraphics  in the  import  statement is no longer marked
-#   as an error, change the above TO-DO to DONE and coninue to the next TO-DO.
+#   as an error, change the above TO-DO to DONE and continue to the next TO-DO.
 #
 ###############################################################################
 
 ###############################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving, *click anywhere in the window to close it*.
 #
@@ -66,7 +66,7 @@ import rosegraphics as rg
 #           print(matt.speed)
 #
 #   After you are confident that you understand all the code below,
-#   change this TO-DO to DONE and  ** continue to the next TOD-DO (below). **
+#   change this TO-DO to DONE and  ** continue to the next TO-DO (below). **
 #
 ###############################################################################
 
@@ -76,7 +76,7 @@ import rosegraphics as rg
 # rosegraphics) module.
 # -----------------------------------------------------------------------------
 window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
+window.delay(10)  # Bigger numbers mean slower animation.
 
 # -----------------------------------------------------------------------------
 # CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
@@ -86,26 +86,39 @@ boris = rg.SimpleTurtle()
 # -----------------------------------------------------------------------------
 # Ask the SimpleTurtle object to do things by applying METHODs to it:
 # -----------------------------------------------------------------------------
+boris.forward(50)
+boris.left(60)
 boris.forward(100)
-boris.left(90)
-boris.forward(200)
 
 # -----------------------------------------------------------------------------
 # Construct a second SimpleTurtle,
 # set its  pen  and  speed  INSTANCE VARIABLES, and ask it to do things.
 # -----------------------------------------------------------------------------
 natasha = rg.SimpleTurtle('turtle')
-natasha.pen = rg.Pen('red', 30)  # Second argument is the Pen's thickness
+natasha.pen = rg.Pen('thistle', 30)  # Second argument is the Pen's thickness
 natasha.speed = 10  # Faster
 
-natasha.backward(50)
-natasha.right(90)
-natasha.forward(50)
+natasha.backward(100)
+natasha.left(120)
+natasha.forward(110)
+natasha.right(120)
+natasha.forward(100)
+natasha.left(60)
+
+natasha.pen=rg.Pen('lightsteelblue',30)
+
+natasha.backward(100)
+natasha.left(180)
+natasha.forward(100)
+natasha.left(120)
+natasha.forward(100)
+natasha.left(120)
+natasha.forward(100)
 
 
 ###############################################################################
 #
-# TODO: 4.
+# Done: 4.
 #   Add a few more line of your own code to make one of the
 #   existing SimpleTurtles move some more and/or have different
 #   characteristics.
@@ -119,7 +132,7 @@ natasha.forward(50)
 
 ###############################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       dave    matt
@@ -146,7 +159,7 @@ natasha.forward(50)
 
 ###############################################################################
 #
-# TODO: 6.
+# Done: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #

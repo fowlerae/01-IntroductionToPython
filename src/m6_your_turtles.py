@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Ashley Fowler.
 """
 ###############################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -27,3 +27,40 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.delay(10)
+
+samwell = rg.SimpleTurtle()
+samwell.pen = rg.Pen('goldenrod',5)
+samwell.speed=10
+
+ben=rg.SimpleTurtle()
+ben.pen=rg.Pen('wheat',5)
+ben.speed=10
+
+size=200
+
+
+for k in range(14):
+    samwell.draw_square(size)
+    ben.draw_square(size)
+
+    samwell.pen_up()
+    ben.pen_up()
+    samwell.right(35)
+    ben.right(35)
+    samwell.forward(12)
+    ben.forward(9)
+    samwell.left(50)
+    ben.left(50)
+
+    samwell.pen_down()
+    ben.pen_down()
+    size=size-15
+
+
+
+
+window.close_on_mouse_click()
+
